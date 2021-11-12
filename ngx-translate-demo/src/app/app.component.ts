@@ -19,6 +19,7 @@ export class AppComponent {
     }
 
     useLanguage(language: string) {
+        this.translate.resetLang(language);
         this.translate.use(language);
     }
 }
