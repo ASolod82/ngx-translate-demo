@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && docker build -t artemsolod/ngx-ui . && docker push artemsolod/ngx-ui",
+    "build": "ng build",
+    "build-docker": "ng build && docker build -t artemsolod/ngx-ui . && docker push artemsolod/ngx-ui",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
